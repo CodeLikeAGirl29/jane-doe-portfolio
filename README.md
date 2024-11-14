@@ -2,6 +2,10 @@
 
 This is a responsive portfolio website for showcasing Jane Doe's work as a frontend developer. The website includes an interactive layout with project showcases, a responsive navigation bar, and a contact section with social media links. Built with HTML, CSS, and JavaScript, the site provides an elegant and professional way to present projects and skills.
 
+view it live [here](https://codelikeagirl29.github.io/jane-doe-portfolio/)
+
+> built for [Hyperskill](https://hyperskill.org/projects/137?track=5)
+
 ## Features
 
 - **Responsive Design**: The site is fully responsive, adapting to various screen sizes from desktop to mobile devices.
