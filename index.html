@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Doe - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Jane Doe</h1>
+    <!-- Hamburger Icon -->
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar hamburger-menu">
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#home">Home</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Jane Doe, Front-end Developer</h1>
+  </section>
+
+  <section id="about" class="about">
+    <img src="assets/person.jpg" alt="Jane Doe">
+    <div>
+      <h2>About Me</h2>
+      <p>Hi, I'm Jane Doe. I've been a junior front-end developer for 5 months now.</p>
+      <p>For me, programming is not just a job, it's a hobby.</p>
+      <p class="description">I'm open to new knowledge, I like to study new technologies and apply them in practice.</p>
+      <p class="skills"><strong>Skills:</strong> <i class="devicon-html5-plain"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <i class="devicon-javascript-plain colored"></i> <i class="devicon-react-original-wordmark colored"></i>
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="portfolio-item">
+        <img src="assets/project1.png" alt="World Map Quiz" class="portfolio-image project">
+        <p>World Map Quiz</p>
+        <button class="open-window" data-target="popup-quiz">More Details</button>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="assets/project2.png" alt="Virtual Piano" class="portfolio-image project">
+        <p>Virtual Piano</p>
+        <button class="open-window" data-target="popup-piano">More Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pop-up Modal for World Map Quiz -->
+  <div class="window" id="popup-quiz">
+    <div class="window-content">
+      <h3>World Map Quiz</h3>
+      <p>This World Map Quiz is an interactive tool designed to challenge users to identify countries on a world map,
+        making geography learning fun and engaging.</p>
+      <button class="close-window">Close</button>
+    </div>
+  </div>
+
+  <!-- Pop-up Modal for Virtual Piano -->
+  <div class="window" id="popup-piano">
+    <div class="window-content">
+      <h3>Virtual Piano</h3>
+      <p>The Virtual Piano project allows users to play musical notes using their keyboard, simulating a real piano
+        experience and helping beginners understand musical notes.</p>
+      <button class="close-window">Close</button>
+    </div>
+  </div>
+
+  <section id="contacts" class="contacts">
+    <h2>Contact Me</h2>
+    <p>You can contact me at <a href="mailto:test@hyperskill.org">test@hyperskill.org</a> or phone number <a
+        href="tel:12345678910">12345678910</a>.</p>
+    <div class="icons footer-social-icons">
+      <div class="rounded-social-buttons">
+        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
+        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i
+            class="fab fa-twitter"></i></a>
+        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Jane Doe 2020</p>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+
+</html>
